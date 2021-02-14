@@ -20,16 +20,22 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
 .container {
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
-    border: 1px solid red;
 }
 
 .header {
     background-color: white;
     position: relative;
+    border-bottom: 1px solid #EEEEEE;
 }
 
 .header a {
@@ -263,6 +269,7 @@ address {
     background-color: white;
 }
 
+
 .portfolio-btn.active,
 .portfolio-btn:hover,
 .portfolio-btn:focus {
@@ -299,8 +306,9 @@ address {
 .portfolio-cards {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    padding-top: 34px;
+    justify-content: space-between; 
+    padding-top: 50px;
+    padding-bottom: 94px;
 }
 
 .portfolio-cards li {
@@ -321,5 +329,15 @@ address {
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
+}
+
+.port-cards {
+    border-bottom: 1px solid #EEEEEE;
+    border-right: 1px solid #EEEEEE;
+    border-left: 1px solid #EEEEEE;  
+    height: 110px;
+    padding-top: 20px;
+    padding-left: 24px;
+    margin-bottom: 30px;
 }
 
