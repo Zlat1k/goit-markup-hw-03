@@ -137,12 +137,14 @@ img {
 .advantages-paragraph,
 .advantages-img {
     display: flex;
-    justify-content: space-between;
 }
 
-.advantages-img li {
-    padding-top: 50px;
-    padding-right: 30px;      
+.advantages-paragraph .advantages-item {
+    flex-basis: calc(100% / 4);
+} 
+
+.advantages-item:not(:last-child) {
+    margin-right: 30px;
 }
 
 .advantages {
@@ -152,7 +154,6 @@ img {
     line-height: 1.17;
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding-right: 30px;
 }
 
 .text-advantages {
@@ -161,8 +162,16 @@ img {
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    padding-right: 30px;
     padding-bottom: 94px;
+}
+
+.advantages-img .img-items {
+    flex-basis: calc(100% / 3);
+    margin-top: 50px;
+}
+
+.img-items:not(:last-child) {
+    margin-right: 30px;
 }
 
 .sect-header {
@@ -184,18 +193,17 @@ img {
     background-color: var(--team-background);
 }
 
-/* .section-team {
-    display: flex;
-} */
-
 .team-icons {
     display: flex;
     padding-top: 50px;
 }
-    
 
-.team-icons li {
-    padding-right: 30px;
+.team-icons .team-items {
+    flex-basis: calc(100% / 4);
+}
+    
+.team-items:not(:last-child) {
+    margin-right: 30px;
 }
 
 .team-names {
@@ -303,16 +311,25 @@ address {
     letter-spacing: 0.03em;
 }
 
-.portfolio-cards {
+.card-set {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between; 
     padding-top: 50px;
     padding-bottom: 94px;
+    margin-left: -30px;
+    margin-top: -30px;   
 }
 
-.portfolio-cards li {
-    padding-top: 30px;
+.container-cards {
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.card-set .item {
+    flex-basis: calc(100% / 3 - 30px);
+    margin-left: 30px;
+    margin-top: 30px;
 }
   
 .port-img {
@@ -338,6 +355,5 @@ address {
     height: 110px;
     padding-top: 20px;
     padding-left: 24px;
-    margin-bottom: 30px;
 }
 
