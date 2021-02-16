@@ -182,13 +182,10 @@ img {
     
 }
 
-.section-team .container{
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
-
 .section-team {
     background-color: var(--team-background);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
 .team-icons {
